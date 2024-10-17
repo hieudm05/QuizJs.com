@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàn thành Quiz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Bạn đã hoàn thành Quiz!</h2>
+        <p class="text-center">Vui lòng điền thông tin để lưu kết quả của bạn.</p>
+
+        <form id="quizForm">
+            <div class="form-group">
+                <label for="name">Tên của bạn</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="score">Điểm số</label>
+                <input type="text" class="form-control" id="score" value="85" readonly>
+            </div>
+            <div class="form-group">
+                <label for="time">Thời gian hoàn thành</label>
+                <input type="text" class="form-control" id="time" value="5 phút" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Gửi thông tin</button>
+        </form>
+    </div>
+
+    <!-- jQuery và Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
